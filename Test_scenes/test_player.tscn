@@ -1,0 +1,75 @@
+[gd_scene load_steps=4 format=3 uid="uid://7h5boo48pvsb"]
+
+[ext_resource type="Texture2D" uid="uid://5f0jb0wjov8o" path="res://addons/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png" id="1_y1jrn"]
+[ext_resource type="PackedScene" uid="uid://dcjkkcfb203mp" path="res://player/player.tscn" id="2_1bvum"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3emdv"]
+line_spacing = 60.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="WarriorBlue" type="Sprite2D" parent="."]
+position = Vector2(1796, 825)
+texture = ExtResource("1_y1jrn")
+
+[node name="Label" type="Label" parent="WarriorBlue"]
+offset_left = -601.0
+offset_top = -682.0
+offset_right = -555.0
+offset_bottom = -659.0
+text = "idle"
+
+[node name="Label2" type="Label" parent="WarriorBlue"]
+offset_left = -602.0
+offset_top = -496.0
+offset_right = -552.0
+offset_bottom = -470.0
+text = "run"
+
+[node name="Label3" type="Label" parent="WarriorBlue"]
+offset_left = -635.0
+offset_top = -295.0
+offset_right = -535.0
+offset_bottom = -272.0
+text = "attack_side 1"
+
+[node name="Label4" type="Label" parent="WarriorBlue"]
+offset_left = -652.0
+offset_top = -96.0
+offset_right = -552.0
+offset_bottom = -73.0
+text = "attack_side 2"
+
+[node name="Label5" type="Label" parent="WarriorBlue"]
+offset_left = -653.0
+offset_top = 82.0
+offset_right = -553.0
+offset_bottom = 105.0
+text = "attack_down 1"
+
+[node name="Label6" type="Label" parent="WarriorBlue"]
+offset_left = -526.0
+offset_top = -791.0
+offset_right = -436.0
+offset_bottom = -768.0
+scale = Vector2(3.0363, 2.31469)
+text = "0               1             2             3             4             5 "
+
+[node name="Label7" type="Label" parent="WarriorBlue"]
+offset_left = 588.0
+offset_top = -707.0
+offset_right = 608.0
+offset_bottom = -550.0
+scale = Vector2(3.0363, 2.31469)
+text = "0               1             2             3             4             5 "
+label_settings = SubResource("LabelSettings_3emdv")
+autowrap_mode = 2
+
+[node name="Player" parent="WarriorBlue" instance=ExtResource("2_1bvum")]
+position = Vector2(-1130, -485)
+
+[node name="Player2" parent="WarriorBlue" instance=ExtResource("2_1bvum")]
+position = Vector2(-1213, -307)
+
+[node name="Player3" parent="WarriorBlue" instance=ExtResource("2_1bvum")]
+position = Vector2(-1330, -553)
